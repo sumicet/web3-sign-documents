@@ -1,0 +1,114 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Cristina\\Desktop\\Projects\\sign-documents\\contracts\\ERC5289Library.sol": {
+      "lastModificationDate": 1686329047023,
+      "contentHash": "e0ac5c06adfe874188d15e939c917e6e",
+      "sourceName": "contracts/ERC5289Library.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC5289Library.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC5289Library"
+      ]
+    },
+    "C:\\Users\\Cristina\\Desktop\\Projects\\sign-documents\\contracts\\IERC5289Library.sol": {
+      "lastModificationDate": 1686321950086,
+      "contentHash": "7f96a0dccf3427fb6af817b1357b3a22",
+      "sourceName": "contracts/IERC5289Library.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC5289Library"
+      ]
+    },
+    "C:\\Users\\Cristina\\Desktop\\Projects\\sign-documents\\contracts\\ERC5289LibraryFactory.sol": {
+      "lastModificationDate": 1686327411591,
+      "contentHash": "2f610ba518958fd3f351d2f86b5b6347",
+      "sourceName": "contracts/ERC5289LibraryFactory.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC5289Library.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC5289LibraryFactory"
+      ]
+    }
+  }
+}
