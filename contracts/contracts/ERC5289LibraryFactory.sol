@@ -8,7 +8,12 @@ contract ERC5289LibraryFactory {
     mapping(address => ERC5289Library[]) private libraries;
 
     // Emitted when a new library is created
-    event LibraryCreated(address indexed wallet, address libraryAddress);
+    event LibraryCreated(
+        address indexed wallet,
+        address libraryAddress,
+        string title,
+        string description
+    );
 
     // Creates a new library contract and stores it in the mapping
     function createLibrary(
@@ -18,7 +23,12 @@ contract ERC5289LibraryFactory {
         ERC5289Library newLibrary = new ERC5289Library(_title, _description);
         libraries[msg.sender].push(newLibrary);
 
-        emit LibraryCreated(msg.sender, address(newLibrary));
+        emit LibraryCreated(
+            msg.sender,
+            address(newLibrary),
+            _title,
+            _description
+        );
     }
 
     // Returns the address of a specific library created by a wallet

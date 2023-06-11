@@ -1,0 +1,25 @@
+query GetLibraryCreateds(
+    $block: Block_height
+    $first: Int = 100
+    $orderBy: LibraryCreated_orderBy
+    $orderDirection: OrderDirection
+    $skip: Int = 0
+    $subgraphError: _SubgraphErrorPolicy_! = deny
+    $where: LibraryCreated_filter
+) {
+    libraryCreateds(
+        block: $block
+        first: $first
+        orderBy: $orderBy
+        orderDirection: $orderDirection
+        skip: $skip
+        subgraphError: $subgraphError
+        where: $where
+    ) {
+        id
+        wallet
+        libraryAddress
+        title
+        description
+    }
+}

@@ -1,0 +1,10 @@
+type LibraryCreated @entity(immutable: true) {
+  id: Bytes!
+  wallet: Bytes! # address
+  libraryAddress: Bytes! # address
+  title: String! # string
+  description: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

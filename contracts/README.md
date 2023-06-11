@@ -4,4 +4,4 @@
 
 | Network | Address |
 | ------- | ------- |
-| Polygon Mumbai | `0xa3b8C81aBe0C85F613f0b838eDBA04D0C843D276`
+| Polygon Mumbai | `0xbf9828ac4F2C51CE72bD962Dd497c7c943942E4B`

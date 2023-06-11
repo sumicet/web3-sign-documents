@@ -55,11 +55,23 @@ export interface ERC5289LibraryFactoryInterface extends Interface {
 }
 
 export namespace LibraryCreatedEvent {
-  export type InputTuple = [wallet: AddressLike, libraryAddress: AddressLike];
-  export type OutputTuple = [wallet: string, libraryAddress: string];
+  export type InputTuple = [
+    wallet: AddressLike,
+    libraryAddress: AddressLike,
+    title: string,
+    description: string
+  ];
+  export type OutputTuple = [
+    wallet: string,
+    libraryAddress: string,
+    title: string,
+    description: string
+  ];
   export interface OutputObject {
     wallet: string;
     libraryAddress: string;
+    title: string;
+    description: string;
   }
   export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>;
   export type Filter = TypedDeferredTopicFilter<Event>;
@@ -155,7 +167,7 @@ export interface ERC5289LibraryFactory extends BaseContract {
   >;
 
   filters: {
-    "LibraryCreated(address,address)": TypedContractEvent<
+    "LibraryCreated(address,address,string,string)": TypedContractEvent<
       LibraryCreatedEvent.InputTuple,
       LibraryCreatedEvent.OutputTuple,
       LibraryCreatedEvent.OutputObject
